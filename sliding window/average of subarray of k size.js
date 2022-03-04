@@ -31,14 +31,14 @@ let AverageOfSubArray = function (arr, k) {
     for (var i = 0; i < arr.length; i++) {
         sum = sum + arr[i]
         if (i >= k - 1) {
-            result.push(sum/5)
+            result.push(sum / 5)
             sum -= arr[leftPointer];
             leftPointer += 1;
         }
     }
     return result;
 }
-
+// the i in the for loop can be thought as the end of the window in this case.
 
 
 let inputArr = [1, 3, 2, 6, -1, 4, 1, 8, 2];
