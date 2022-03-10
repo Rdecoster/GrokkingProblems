@@ -18,7 +18,7 @@ let maxSumOfSubArray = function (arr, k) {
     }
     return maxSum;
 }
-
+// O(n) time complexity, O(1) space complexity 
 
 let Input = [2, 1, 5, 1, 3, 2]
 let inputK = 3
