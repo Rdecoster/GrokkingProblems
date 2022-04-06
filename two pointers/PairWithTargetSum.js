@@ -31,7 +31,7 @@ const PairTargetSum = function (arr, target) {
 
 
 
-// test suite  
+    // test suite  
 
 
 var Input = [1, 2, 3, 4, 6]
