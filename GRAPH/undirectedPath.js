@@ -24,7 +24,9 @@ hasPath = (graph, src, dst, visited) => {
   if  (src === dst) return true;
   if( visited.has(src)) return false;
   visited.add(src);
+
   for (let neighbor of graph[src]) {
+    console.log(neighbor,"for in / of")
     if (hasPath(graph, neighbor, dst, visited) === true){
       return true
     }
@@ -48,7 +50,6 @@ const constructGraph = (edges) => {
     graph[b].push(a)
 
   }
-console.log(graph)
 return graph
 };
 
